@@ -14,7 +14,7 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Chelsea Aiqi Cui
+title: Aiqi Cui
 
 # Short description of your site
 description: A virtual proof that name is awesome!
@@ -180,6 +180,7 @@ prose:
           label: "Post title"
           placeholder: "Title"
           alterable: true
+          size: 1
       - name: "subtitle"
         field:
           element: "textarea"
