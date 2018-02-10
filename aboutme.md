@@ -1,10 +1,9 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Aiqi Cui ("EYE-chee TSOO-i") and my friends usually call me Chelsea. I have the following qualities:
 
 - I rock a great mustache
 - I'm extremely loyal to my family

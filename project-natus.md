@@ -9,6 +9,7 @@ bigimg: "/img/natus-bg.png"
 
 <div class= "project-natus">
 
-	<iframe width="100%"  height="60%" src="https://www.youtube-nocookie.com/embed/yeQnfgwvejw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<p>Natus, </p>
+	<iframe width="100%"  height="100%" src="https://www.youtube-nocookie.com/embed/yeQnfgwvejw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 </div>
