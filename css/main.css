@@ -772,3 +772,8 @@ td.gutter {
   font-style: italic;
   font-size: 16px;
 }
+
+.project-natus {
+    max-width: 800px;
+    margin: auto;
+}
