@@ -2,8 +2,10 @@
 layout: page
 title: Natus
 subtitle: A music game based on pygame, aubio and pyaudio.
-bigimg: "/img/bg.JPG"
+bigimg: "/img/natus-bg.png"
 ---
+
+
 
 <div class= "project-natus">
 
