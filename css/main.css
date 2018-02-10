@@ -774,6 +774,9 @@ td.gutter {
 }
 
 .project-natus iframe{
-    max-width: 800px;
-    margin: auto;
+  margin: auto;
+}
+
+.contact-container{
+  margin: auto;
 }
