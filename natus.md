@@ -6,6 +6,6 @@ subtitle: Why you'd want to go on a date with me
 
 <div class= "project-natus">
 
-	<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yeQnfgwvejw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-	
+	<iframe width="760" height="415" src="https://www.youtube-nocookie.com/embed/yeQnfgwvejw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 </div>
