@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Natus
-subtitle: Why you'd want to go on a date with me
+subtitle: A music game based on pygame, aubio and pyaudio.
 ---
 
 <div class= "project-natus">
