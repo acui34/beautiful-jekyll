@@ -7,11 +7,11 @@ igimg: "/img/natus-bg.png"
 
 
 
-<center>### Please feel free to find me at:</center>
-
+<center><h3>Please feel free to find me at:</h3></center>
+<br><br>
 <center>Email: acui@andrew.cmu.edu</center>
-
+<br><br>
 <center>Phone: (814) 882-9127</center>
-
+<br><br>
 <center>WeChat: chelsea2333</center>
 
