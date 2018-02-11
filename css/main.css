@@ -784,7 +784,7 @@ td.gutter {
 .bio a{
   color: #C39BD3;
 }
-.cv{
+.cv a {
   margin: auto;
   text-decoration: underline;
 }
