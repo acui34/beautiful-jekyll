@@ -134,9 +134,9 @@ var main = {
 	}
   }
 
-  jQuery(document).ready(function(){
-  jQuery('.skillbar').each(function(){
-    jQuery(this).find('.skillbar-final').animate({
+  $(document).ready(function(){
+  $('.skillbar').each(function(){
+    $(this).find('.skillbar-final').animate({
       width:jQuery(this).attr('data-percent')
     },2500);
   });
