@@ -5,6 +5,9 @@ subtitle: Information Systems and Stats & ML Student <br />Carnegie Mellon Unive
 use-site-title: true
 ---
 
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
 
 <div class="bio">
 
@@ -111,11 +114,10 @@ use-site-title: true
 	<script>
 		$(document).ready(function(){
 			$('.skillbar').each(function(){
-		$(this).find('.skillbar-final').animate({
-			width:$(this).attr('data-percent')
-		},2500);
-	});
-});
+				$(this).find('.skillbar-final').animate({width:$(this).attr('data-percent')},2500); 
+			});
+		});
+
 	</script>
 </div>
 
