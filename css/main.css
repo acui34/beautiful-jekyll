@@ -802,7 +802,7 @@ td.gutter {
   height: 25px;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
-  background: #042037;
+  background: #7FB3D5;
   width: 100px;
   position: absolute;
   
@@ -818,7 +818,7 @@ td.gutter {
     height:25px;
     border-radius: 3px;
     width:0px;
-   background:#123552;
+    background:#123552;
     
   
   }
