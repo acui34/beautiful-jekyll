@@ -137,7 +137,7 @@ var main = {
   $(document).ready(function(){
   $('.skillbar').each(function(){
     $(this).find('.skillbar-final').animate({
-      width:jQuery(this).attr('data-percent')
+      width:$(this).attr('data-percent')
     },2500);
   });
 });
