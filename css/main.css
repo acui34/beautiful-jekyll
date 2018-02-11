@@ -26,7 +26,7 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 800;
 }
 a {
-  color: {{ site.link-col }};
+  color: #C39BD3;
 }
 a:hover,
 a:focus {
@@ -781,6 +781,3 @@ td.gutter {
   margin: auto;
 }
 
-.cv {
-  margin: auto;
-}
