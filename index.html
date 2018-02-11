@@ -38,7 +38,7 @@ use-site-title: true
 		<h3>Courses</h3>
 		<p>The advanced CS/Math courses I've taken at CMU:</p>
 	</p>
-	
+
 	<table>
 	  <tr>
 	    <th>Course Number</th>
@@ -107,7 +107,16 @@ use-site-title: true
 
         <div class="skillbar" data-percent="60%"><div class="skillbar-titulo"><span>Responsive</span></div><div class="skillbar-final"></div></div>
 
-	</p>
+
+	<script>
+		$(document).ready(function(){
+			$('.skillbar').each(function(){
+		$(this).find('.skillbar-final').animate({
+			width:$(this).attr('data-percent')
+		},2500);
+	});
+});
+	</script>
 </div>
 
 <br>
