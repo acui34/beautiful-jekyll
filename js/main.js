@@ -133,8 +133,20 @@ var main = {
 	  $(".img-desc").hide();
 	}
   }
+
+  jQuery(document).ready(function(){
+  jQuery('.skillbar').each(function(){
+    jQuery(this).find('.skillbar-final').animate({
+      width:jQuery(this).attr('data-percent')
+    },2500);
+  });
+});
+
+
 };
 
 // 2fc73a3a967e97599c9763d05e564189
+
+
 
 document.addEventListener('DOMContentLoaded', main.init);
