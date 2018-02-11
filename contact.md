@@ -5,14 +5,13 @@ subtitle: Let's get in touch!
 igimg: "/img/natus-bg.png"
 ---
 
-<p align="center">
 
-<h3> Please feel free to find me at:</h3>
-<br>
-Email: acui@andrew.cmu.edu
-<br>
-Phone: (814) 882-9127
-<br>
-WeChat: chelsea2333
 
-</p>
+<center>### Please feel free to find me at:</center>
+
+<center>Email: acui@andrew.cmu.edu</center>
+
+<center>Phone: (814) 882-9127</center>
+
+<center>WeChat: chelsea2333</center>
+
