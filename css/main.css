@@ -785,26 +785,26 @@ td.gutter {
 
 
 .skills h1{
-  margin-left:100px;
+    margin-left:100px;
 }
 .skillbar{
-  height: 25px;
-  border-radius:3px;
-  margin-top:10px;
-  display: block;
-  position: relative;
-  width: 500px;
-  background:#eee;
-  transition:0.4s linear;
-  transition-property:width, background-color;
+    height: 25px;
+    border-radius:3px;
+    margin-top:10px;
+    display: block;
+    position: relative;
+    width: 500px;
+    background:#eee;
+    transition:0.4s linear;
+    transition-property:width, background-color;
 }
   .skillbar-titulo{
-  height: 25px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-  background: #7FB3D5;
-  width: 100px;
-  position: absolute;
+    height: 25px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background: #7FB3D5;
+    width: 100px;
+    position: absolute;
   
   }
   .skillbar-titulo span{
