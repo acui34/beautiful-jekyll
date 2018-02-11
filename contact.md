@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contact
-subtitle: Let's get in touch!
+subtitle: Let's get connected!
 igimg: "/img/natus-bg.png"
 ---
 
