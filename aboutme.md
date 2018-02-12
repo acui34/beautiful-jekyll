@@ -3,6 +3,8 @@ layout: page
 title: About me
 ---
 
+[Congrats! You caught Aiqi still working on this page! Good stuffs coming soon : D]
+
 My name is Aiqi Cui ("EYE-chee TSOO-i") and my friends usually call me Chelsea. I have the following qualities:
 
 - I rock a great mustache
