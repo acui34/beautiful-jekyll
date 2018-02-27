@@ -11,7 +11,7 @@ Here's some random things about me (hover over the image to see!: ):
 
 - I was born and raised in a beautiful city known for springs- Jinan, China
 
-![Logo Jekyll]({{site.url}}/img/jinan1.jpeg)
+![Logo Jekyll]({{site.url}}/img/jinan2.jpeg)
 
 - I'm extremely loyal to my family
 
