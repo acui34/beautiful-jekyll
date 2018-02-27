@@ -10,14 +10,13 @@ My name is Aiqi Cui ("EYE-chee TSOO-i") and my friends usually call me Chelsea.
 Here's some random things about me :
 
 
-- I was born and raised in a beautiful city known for springs - [Jinan, China](https://en.wikipedia.org/wiki/Jinan).
+- I was born and raised in a beautiful city known for its abundance of springs - [Jinan, China](https://en.wikipedia.org/wiki/Jinan).
 
-<div style="width:50%">![Logo Jekyll]({{site.url}}/img/jinan2.jpeg)</div>
+- I love my family very much.
 
-- I'm extremely loyal to my family
+- I enjoy wandering randomly in the city with my friends to explore the unkown blocks.
 
-What else do you need?
+- About 2/3 of my ins pictures are food :D
 
-### my history
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+
