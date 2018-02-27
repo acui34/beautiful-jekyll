@@ -23,8 +23,7 @@ description: A virtual proof that name is awesome!
 
 # List of links in the navigation bar
 navbar-links:
-  title: About Me
-  url: aboutme.html
+  About Me: "aboutme"
   Projects:
     - Natus: "https://www.youtube.com/watch?v=yeQnfgwvejw&t=3s"
     - Brocolli Run: "https://www.youtube.com/watch?v=DcEPMrYjpHg"

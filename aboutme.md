@@ -9,62 +9,8 @@ My name is Aiqi Cui ("EYE-chee TSOO-i") and my friends usually call me Chelsea.
 Here's some random things about me (hover over the image to see!: ):
 
 
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.container {
-  position: relative;
-  width: 50%;
-}
+- I was born and raised in a beautiful city known for springs- Jinan, China
 
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-</style>
-</head>
-<body>
-
-<div class="container">
-  <img src="img_avatar.png" alt="Avatar" class="image">
-  <div class="overlay">
-    <div class="text">I was born and raised in Jinan, China</div>
-
-  </div>
-</div>
-
-</body>
-</html>
 
 - I'm extremely loyal to my family
 
