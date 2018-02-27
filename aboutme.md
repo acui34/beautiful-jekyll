@@ -6,10 +6,11 @@ title: About me
 
 My name is Aiqi Cui ("EYE-chee TSOO-i") and my friends usually call me Chelsea. 
 
-Here's some random things about me (hover over the image to see!: ):
+
+Here's some random things about me :
 
 
-- I was born and raised in a beautiful city known for springs- Jinan, China
+- I was born and raised in a beautiful city known for springs -[Jinan, China](https://en.wikipedia.org/wiki/Jinan)
 
 ![Logo Jekyll]({{site.url}}/img/jinan2.jpeg)
 
