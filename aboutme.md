@@ -8,7 +8,7 @@ My name is Aiqi Cui ("EYE-chee TSOO-i") and my friends usually call me Chelsea.
 
 Here's some random things about me (hover over the image to see!: ):
 
-<!DOCTYPE html>
+
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
