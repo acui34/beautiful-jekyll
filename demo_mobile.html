@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Mobile Index</title>
+</head>
+
+<style>
+    /*Lightbox Style*/
+
+    .thumbnail {
+      max-width: 40%;
+    }
+
+    .italic { font-style: italic; }
+    .small { font-size: 0.8em; }
+
+    /** LIGHTBOX MARKUP **/
+
+    .lightbox {
+        /** Default lightbox to hidden */
+        display: none;
+
+        /** Position and style */
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.8);
+    }
+
+    .lightbox img {
+        /** Pad the lightbox image */
+        max-width: 100%;
+        max-height: 90%;
+        margin-top: 2%;
+    }
+
+    .lightbox:target {
+        /** Remove default browser outline */
+        outline: none;
+
+        /** Unhide lightbox **/
+        display: block;
+    }
+    /*Lightbox Style End*/
+
+    img:{
+        margin:0;
+    }
+    .jointed_legs{
+        position: absolute;
+        width:12%;
+        height:8%;
+        /*background-color: red;*/
+        top:10%;
+        right:55%;
+    }
+    .portable_cases{
+        position: absolute;
+        width:14%;
+        height:8%;
+        /*background-color: red;*/
+        top:20%;
+        right:68%;
+    }
+    .piercing{
+        position: absolute;
+        width:17%;
+        height:8%;
+        /*background-color: red;*/
+        top:10%;
+        right:68%;
+    }
+    .shells{
+        position: absolute;
+        width:12%;
+        height:8%;
+        /*background-color: red;*/
+        top:20%;
+        right:55%;
+    }
+    .wings_wing_pads{
+        position: absolute;
+        width:14%;
+        height:7%;
+        /*background-color: red;*/
+        top:30%;
+        right:62%;        
+    }
+    .fleshy_protrusions_heads{
+        position: absolute;
+        width:16%;
+        height:5%;
+        /*background-color: red;*/
+        top:30%;
+        right:45%;    
+    }
+    .body_segments{
+        position: absolute;
+        width:16%;
+        height:5%;
+        /*background-color: red;*/
+        top:30%;
+        right:29%;  
+    }
+    .hooks{
+        position: absolute;
+        width:18%;
+        height:7%;
+        /*background-color: red;*/
+        top:40%;
+        right:65%;    
+    }
+    .tail_filaments{
+        position: absolute;
+        width:12%;
+        height:8%;
+        /*background-color: red;*/
+        top:35%;
+        right:52%;    
+    }
+    .lateral_filaments{
+        position: absolute;
+        width:14%;
+        height:7%;
+        /*background-color: red;*/
+        top:48%;
+        right:70%;    
+    }
+    .lateral_filaments_2{
+        position: absolute;
+        width:14%;
+        height:7%;
+        /*background-color: green;*/
+        top:55%;
+        right:60%;    
+    }
+    .abdominal_gills{
+        position: absolute;
+        width:15%;
+        height:7%;
+        /*background-color: red;*/
+        top:48%;
+        right:53%;    
+    }
+    .wings_wing_pads_2{
+        position: absolute;
+        width:18%;
+        height:7%;
+        /*background-color: red;*/
+        top:43%;
+        right:38%;    
+    }
+    .hard_leathery_wings{
+        position: absolute;
+        width:14%;
+        height:9%;
+       /* background-color: red;*/
+        top:57%;
+        right:33%;    
+    }
+    .two_three_tails{
+        position: absolute;
+        width:13%;
+        height:10%;
+        /*background-color: green;*/
+        top:66%;
+        right:45%;    
+    }
+    .branched_gills{
+        position: absolute;
+        width:12%;
+        height:11%;
+        /*background-color: green;*/
+        top:56%;
+        right:80%;    
+    }
+    .trichoptera{
+        position: absolute;
+        width:9%;
+        height:16%;
+        /*background-color: yellow;*/
+        top:30%;
+        right:90%;    
+    }
+    .trichoptera_2{
+        position: absolute;
+        width:9%;
+        height:16%;
+        /*background-color: yellow;*/
+        top:70%;
+        right:83%;    
+    }
+    .megaloptera{
+        position: absolute;
+        width:9%;
+        height:16%;
+        /*background-color: yellow;*/
+        top:78%;
+        right:73%;    
+    }
+    .megaloptera_2{
+        position: absolute;
+        width:9%;
+        height:16%;
+        /*background-color: yellow;*/
+        top:64%;
+        right:67%;    
+    }
+    .coleoptera{
+        position: absolute;
+        width:9%;
+        height:16%;
+        /*background-color: yellow;*/
+        top:84%;
+        right:63%;    
+    }
+    .ephemeroptera{
+        position: absolute;
+        width:6%;
+        height:16%;
+        /*background-color: yellow;*/
+        top:63%;
+        right:60%;    
+    }
+    .odonata{
+        position: absolute;
+        width:6%;
+        height:16%;
+        /*background-color: yellow;*/
+        top:53%;
+        right:47%; 
+    }
+    .odonata_2{
+        position: absolute;
+        width:7%;
+        height:16%;
+        /*background-color: yellow;*/
+        top:75%;
+        right:46%; 
+    }
+    .plecoptera{
+        position: absolute;
+        width:9%;
+        height:16%;
+        /*background-color: yellow;*/
+        top:83%;
+        right:53%; 
+    }
+     .plecoptera_2{
+        position: absolute;
+        width:9%;
+        height:16%;
+        /*background-color: yellow;*/
+        top:43%;
+        right:83%; 
+    }
+    .coleoptera_2{
+        position: absolute;
+        width:8%;
+        height:16%;
+        /*background-color: yellow;*/
+        top:68%;
+        right:40%;         
+    }
+    .hemiptera{
+        position: absolute;
+        width:8%;
+        height:16%;
+       /* background-color: yellow;*/
+        top:81%;
+        right:34%;    
+    }
+
+    .hemiptera_2{
+        position: absolute;
+        width:9%;
+        height:16%;
+        /*background-color: yellow;*/
+        top:22%;
+        right:80%;    
+    }
+
+    .diptera{
+        position: absolute;
+        width:9%;
+        height:18%;
+        /*background-color: yellow;*/
+        top:38%;
+        right:30%;     
+    }
+    .isopoda{
+        position: absolute;
+        width:7%;
+        height:16%;
+        /*background-color: yellow;*/
+        top:9%;
+        right:17%;  
+    }
+    .amphipoda{
+        position: absolute;
+        width:7%;
+        height:16%;
+       /* background-color: red;*/
+        top:9%;
+        right:10%; 
+    }
+    .decapoda{
+        position: absolute;
+        width:7%;
+        height:16%;
+       /* background-color: green;*/
+        top:9%;
+        right:3%;        
+    }
+     .topcorner{
+       position:absolute;
+       top:0;
+       right:0;
+       width:3%;
+       height: 3%;
+    }
+
+</style>
+
+<body >
+
+<img src="./img/new_new_key.png" width="100%" height="100%" alt="Order Key">
+<a href="http://alpha.macroinvertebrates.org/"><div class="topcorner">X</div></a>
+
+<a href="#jointed_legs"><div class="jointed_legs"></div></a>
+<a href="#_" class="lightbox" id="jointed_legs"><img src="./img/jointed_legs.png"></a>
+
+<a href="#piercing"><div class="piercing"></div></a>
+<a href="#_" class="lightbox" id="piercing"><img src="./img/piercing_or_needlelike_mouthparts.png"></a>
+
+<a href="#portable_cases"><div class="portable_cases"></div></a>
+<a href="#_" class="lightbox" id="portable_cases"><img src="./img/portable_cases.png"></a>
+
+<a href="#shells"><div class="shells"></div></a>
+<a href="#_" class="lightbox" id="shells"><img src="./img/shells.png"></a>
+
+<a href="#wings_wing_pads"><div class="wings_wing_pads"></div></a>
+<a href="#_" class="lightbox" id="wings_wing_pads"><img src="./img/wings_wing_pads.png"></a>
+
+<a href="#fleshy_protrusions_heads"><div class="fleshy_protrusions_heads"></div></a>
+<a href="#_" class="lightbox" id="fleshy_protrusions_heads"><img src="./img/fleshy_protrusions_heads.png"></a>
+
+<a href="#body_segments"><div class="body_segments"></div></a>
+<a href="#_" class="lightbox" id="body_segments"><img src="./img/body_segments.png"></a>
+
+<a href="#hooks"><div class="hooks"></div></a>
+<a href="#_" class="lightbox" id="hooks"><img src="./img/hooks.png"></a>
+
+<a href="#tail_filaments"><div class="tail_filaments"></div></a>
+<a href="#_" class="lightbox" id="tail_filaments"><img src="./img/tail_filaments.png"></a>
+
+<a href="#lateral_filaments"><div class="lateral_filaments"></div></a>
+<a href="#_" class="lightbox" id="lateral_filaments"><img src="./img/lateral_filaments.png"></a>
+
+<a href="#abdominal_gills"><div class="abdominal_gills"></div></a>
+<a href="#_" class="lightbox" id="abdominal_gills"><img src="./img/abdominal_gills.png"></a>
+
+<a href="#wings_wing_pads"><div class="wings_wing_pads_2"></div></a>
+<a href="#_" class="lightbox" id="wings_wing_pads"><img src="./img/wings_wing_padsl.png"></a>
+
+<a href="#hard_leathery_wings"><div class="hard_leathery_wings"></div></a>
+<a href="#_" class="lightbox" id="hard_leathery_wings"><img src="./img/hard_leathery_wings.png"></a>
+
+<a href="#two_three_tails"><div class="two_three_tails"></div></a>
+<a href="#_" class="lightbox" id="two_three_tails"><img src="./img/two_three_tails.png"></a>
+
+
+<a href="#lateral_filaments"><div class="lateral_filaments_2"></div></a>
+<a href="#_" class="lightbox" id="lateral_filaments"><img src="./img/lateral_filaments.png"></a>
+
+<a href="#branched_gills"><div class="branched_gills"></div></a>
+<a href="#_" class="lightbox" id="branched_gills"><img src="./img/branched_gills.png"></a>
+
+
+
+<a href="http://alpha.macroinvertebrates.org/taxa-characters/trichoptera-larva"><div class="trichoptera"></div></a>
+<a href="http://alpha.macroinvertebrates.org/taxa-characters/trichoptera-larva"><div class="trichoptera_2"></div></a>
+<a href="http://alpha.macroinvertebrates.org/taxa-characters/megaloptera-larva"><div class="megaloptera"></div></a>
+<a href="http://alpha.macroinvertebrates.org/taxa-characters/megaloptera-larva"><div class="megaloptera_2"></div></a>
+<a href="http://alpha.macroinvertebrates.org/taxa-characters/coleoptera-larva"><div class="coleoptera"></div></a>
+<a href="http://alpha.macroinvertebrates.org/taxa-characters/ephemeroptera-larva"><div class="ephemeroptera"></div></a>
+<a href="http://alpha.macroinvertebrates.org/taxa-characters/plecoptera-larva"><div class="plecoptera"></div></a>
+<a href="http://alpha.macroinvertebrates.org/taxa-characters/plecoptera-larva"><div class="plecoptera_2"></div></a>
+<a href="http://alpha.macroinvertebrates.org/taxa-characters/odonata-larva"><div class="odonata"></div></a>
+<a href="http://alpha.macroinvertebrates.org/taxa-characters/odonata-larva"><div class="odonata_2"></div></a>
+<a href="http://alpha.macroinvertebrates.org/taxa-characters/coleoptera-adult"><div class="coleoptera_2"></div></a>
+<a href="http://alpha.macroinvertebrates.org/taxa-characters/hemiptera-adult"><div class="hemiptera"></div></a>
+<a href="http://alpha.macroinvertebrates.org/taxa-characters/hemiptera-adult"><div class="hemiptera_2"></div></a>
+<a href="http://alpha.macroinvertebrates.org/taxa-characters/diptera-larva"><div class="diptera"></div></a>
+<a href="http://alpha.macroinvertebrates.org/taxa-characters/isopoda-larva"><div class="isopoda"></div></a>
+<a href="http://alpha.macroinvertebrates.org/taxa-characters/amphipoda-adult"><div class="amphipoda"></div></a>
+<a href="http://alpha.macroinvertebrates.org/taxa-characters/decapoda-larva"><div  class="decapoda"></div></a>
+
+</body>
+
+</html>
+
