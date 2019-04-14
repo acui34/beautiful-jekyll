@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Order Key</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+
+<style>
+  
+    #main {
+      width: 100%;
+      background-color: #e7e8e8;
+    }
+    /*Lightbox Style*/
+
+    .thumbnail {
+      max-width: 40%;
+    }
+
+    .italic { font-style: italic; }
+    .small { font-size: 0.8em; }
+
+    /** LIGHTBOX MARKUP **/
+
+    .lightbox {
+        /** Default lightbox to hidden */
+        display: none;
+
+        /** Position and style */
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.8);
+    }
+
+    .lightbox img {
+        /** Pad the lightbox image */
+        max-width: 100%;
+        max-height: 90%;
+        margin-top: 2%;
+    }
+
+    .lightbox:target {
+        /** Remove default browser outline */
+        outline: none;
+
+        /** Unhide lightbox **/
+        display: block;
+    }
+    /*Lightbox Style End*/
+
+    img:{
+        margin:0;
+    }
+    
+     .clickable{
+        position: absolute;
+     }
+     .topcorner{
+       position:absolute;
+       top:3px;
+       right:3px;
+       width:3%;
+       height: 7%;
+    }
+
+    #back_button {
+      display: inline-block;
+      width: auto;
+      max-height: 36px;
+      border: 1px solid #333333;
+      padding: 5px 20px;
+      cursor: pointer;
+      font-family: "Nunito Sans", sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      background-color: #24B7E8;
+      color: white;
+  }
+
+  #header {
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    height: 4.8%;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+  }
+
+  #header h1 {
+    font-size: 1.0em;
+    text-align: center;
+    margin-top: 5px;
+    font-family: "Nunito Sans", sans-serif;
+  }
+
+</style>
+
+<body >
+<div id="main">
+<div id="header" class="scalable">
+    <h1>Aquatic Macroinvertebrate Order Level Key</h1>
+</div>
+
+<div id="home_page_taxa">
+    <img src="./img/key_v3.png" width="100%" alt="Order Key">
+    <a href="http://alpha.macroinvertebrates.org/"><button id="back_button" class="topcorner scalable">Back</button></a>
+
+    <a href="#jointed_legs" ><div id="jointed_legs_area" class="scalable clickable jointed_legs" width="180"
+        height="33" data-default-left="710" data-default-top="120" data-zoom-about="left,top"></div></a>
+    <a href="#_" class="lightbox" id="jointed_legs"><img src="./img/jointed_legs.png"></a>
+
+    <a href="#piercing"><div id="piercing_area" class="scalable clickable piercing" width="350"
+        height="33" data-default-left="320" data-default-top="180" data-zoom-about="left,top"></div></a>
+    <a href="#_" class="lightbox" id="piercing"><img src="./img/piercing_or_needlelike_mouthparts.png"></a>
+
+    <a href="#portable_cases"><div id="portable_cases_area" class="scalable clickable portable_cases" width="250"
+        height="33" data-default-left="420" data-default-top="280" data-zoom-about="left,top"></div></a>
+    <a href="#_" class="lightbox" id="portable_cases"><img src="./img/portable_cases.png"></a>
+
+    <a href="#shells"><div id="shells_area" class="scalable clickable shells" width="200"
+        height="35" data-default-left="780" data-default-top="305" data-zoom-about="left,top"></div></a>
+    <a href="#_" class="lightbox" id="shells"><img src="./img/shells.png"></a>
+
+    <a href="#wings_wing_pads"><div id="wings_wing_pads_area" class="scalable clickable wings_wing_pads" width="240"
+        height="35" data-default-left="560" data-default-top="375" data-zoom-about="left,top"></div></a>
+    <a href="#_" class="lightbox" id="wings_wing_pads"><img src="./img/wings_wing_pads.png"></a>
+
+    <a href="#fleshy_protrusions_heads"><div id="fleshy_protrusions_heads_area" class="scalable clickable fleshy_protrusions_heads" width="300" height="35" data-default-left="820" data-default-top="375" data-zoom-about="left,top"></div></a>
+    <a href="#_" class="lightbox" id="fleshy_protrusions_heads"><img src="./img/fleshy_protrusions_heads.png"></a>
+
+    <a href="#body_segments"><div id="body_segments_area" class="scalable clickable body_segments" width="260"
+        height="35" data-default-left="1180" data-default-top="375" data-zoom-about="left,top"></div></a>
+    <a href="#_" class="lightbox" id="body_segments"><img src="./img/body_segments.png"></a>
+
+    <a href="#hooks"><div id="hooks_area" class="scalable clickable hooks" width="360"
+        height="35" data-default-left="360" data-default-top="485" data-zoom-about="left,top"></div></a>
+    <a href="#_" class="lightbox" id="hooks"><img src="./img/hooks.png"></a>
+
+    <a href="#tail_filaments"><div id="tail_filaments_area" class="scalable clickable tail_filaments" width="210"
+        height="36" data-default-left="770" data-default-top="450" data-zoom-about="left,top"></div></a>
+    <a href="#_" class="lightbox" id="tail_filaments"><img src="./img/tail_filaments.png"></a>
+
+    <a href="#lateral_filaments"><div id="lateral_filaments_area" class="scalable clickable lateral_filaments" width="230"
+        height="36" data-default-left="370" data-default-top="610" data-zoom-about="left,top"></div></a>
+    <a href="#_" class="lightbox" id="lateral_filaments"><img src="./img/lateral_filaments.png"></a>
+
+    <a href="#abdominal_gills"><div id="abdominal_gills_area" class="scalable clickable abdominal_gills" width="330"
+        height="36" data-default-left="670" data-default-top="610" data-zoom-about="left,top"></div></a>
+    <a href="#_" class="lightbox" id="abdominal_gills"><img src="./img/abdominal_gills.png"></a>
+
+    <a href="#wings_wing_pads"><div id="wings_wing_pads_area_2" class="scalable clickable wings_wing_pads_2" width="260"
+        height="36" data-default-left="960" data-default-top="550" data-zoom-about="left,top"></div></a>
+    <a href="#_" class="lightbox" id="wings_wing_pads"><img src="./img/wings_wing_pads.png"></a>
+
+    <a href="#hard_leathery_wings"><div id="hard_leathery_wings_area" class="scalable clickable hard_leathery_wings" width="210"
+        height="36" data-default-left="1130" data-default-top="710" data-zoom-about="left,top"></div></a>
+    <a href="#_" class="lightbox" id="hard_leathery_wings"><img src="./img/hard_leathery_wings.png"></a>
+
+    <a href="#two_three_tails"><div id="two_three_tails_area" class="scalable clickable two_three_tails" width="200"
+        height="36" data-default-left="885" data-default-top="838" data-zoom-about="left,top"></div></a>
+    <a href="#_" class="lightbox" id="two_three_tails"><img src="./img/two_three_tails.png"></a>
+
+    <a href="#lateral_filaments"><div id="lateral_filaments_area_2" class="scalable clickable lateral_filaments_2" width="230"
+        height="37" data-default-left="540" data-default-top="672" data-zoom-about="left,top"></div></a>
+    <a href="#_" class="lightbox" id="lateral_filaments"><img src="./img/lateral_filaments.png"></a>
+
+    <a href="#branched_gills"><div id="branched_gills_area" class="scalable clickable branched_gills" width="210"
+        height="36" data-default-left="207" data-default-top="765" data-zoom-about="left,top"></div></a>
+    <a href="#_" class="lightbox" id="branched_gills"><img src="./img/branched_gills.png"></a>
+
+
+
+    <a href="http://alpha.macroinvertebrates.org/taxa-characters/trichoptera-larva"><div  id="trichoptera_order_area" class="scalable trichoptera clickable" width="120" height="150" data-default-left="70" data-default-top="405" data-zoom-about="left,top"></div></a>
+    <a href="http://alpha.macroinvertebrates.org/taxa-characters/trichoptera-larva"><div id="trichoptera_order_area_2" class="scalable trichoptera_2 clickable" width="130" height="160" data-default-left="230" data-default-top="925" data-zoom-about="left,top"></div></a>
+    <a href="http://alpha.macroinvertebrates.org/taxa-characters/megaloptera-larva"><div id="megaloptera_order_area" class="scalable megaloptera clickable" width="130" height="160" data-default-left="430" data-default-top="925" data-zoom-about="left,top"></div></a>
+    <a href="http://alpha.macroinvertebrates.org/taxa-characters/megaloptera-larva"><div id="megaloptera_order_area_2" class="scalable megaloptera_2 clickable" width="130" height="180" data-default-left="645" data-default-top="1000" data-zoom-about="left,top"></div></a>
+    <a href="http://alpha.macroinvertebrates.org/taxa-characters/coleoptera-larva"><div id="coleoptera_area" class="scalable coleoptera clickable"  width="130" height="160" data-default-left="520" data-default-top="765" data-zoom-about="left,top"></div></a>
+    <a href="http://alpha.macroinvertebrates.org/taxa-characters/ephemeroptera-larva"><div id="ephemeroptera_area" class="scalable ephemeroptera clickable" width="130" height="160" data-default-left="743" data-default-top="765" data-zoom-about="left,top"></div></a>
+    <a href="http://alpha.macroinvertebrates.org/taxa-characters/plecoptera-larva"><div id="plecoptera_area" class="scalable plecoptera clickable"  width="120" height="180" data-default-left="863" data-default-top="995" data-zoom-about="left,top"></div></a>
+    <a href="http://alpha.macroinvertebrates.org/taxa-characters/plecoptera-larva"><div id="plecoptera_area_2" class="scalable plecoptera_2 clickable"  width="120" height="180" data-default-left="190" data-default-top="535" data-zoom-about="left,top"></div></a>
+    <a href="http://alpha.macroinvertebrates.org/taxa-characters/odonata-larva"><div id="odonata_area" class="scalable odonata clickable" width="120" height="180" data-default-left="990" data-default-top="945" data-zoom-about="left,top"></div></a>
+
+    <a href="http://alpha.macroinvertebrates.org/taxa-characters/odonata-larva"><div id="odonata_area_2" class="scalable odonata_2 clickable"  width="120" height="170" data-default-left="990" data-default-top="655" data-zoom-about="left,top"></div></a>
+
+    <a href="http://alpha.macroinvertebrates.org/taxa-characters/coleoptera-adult"><div id="coleoptera_area_2" class="scalable coleoptera_2 clickable" width="120" height="170" data-default-left="1150" data-default-top="820" data-zoom-about="left,top"></div></a>
+
+    <a href="http://alpha.macroinvertebrates.org/taxa-characters/hemiptera-adult"><div id="hemiptera_area" class="scalable hemiptera clickable"  width="120" height="170" data-default-left="290" data-default-top="285" data-zoom-about="left,top"></div></a>
+
+    <a href="http://alpha.macroinvertebrates.org/taxa-characters/hemiptera-adult"><div id="hemiptera_area_2" class="scalable hemiptera_2 clickable" width="120" height="170" data-default-left="1260" data-default-top="985" data-zoom-about="left,top"></div></a>
+
+    <a href="http://alpha.macroinvertebrates.org/taxa-characters/diptera-larva"><div id="diptera_area"  class="scalable diptera clickable" width="120" height="210" data-default-left="1340" data-default-top="475" data-zoom-about="left,top"></div></a>
+
+    <a href="http://alpha.macroinvertebrates.org/taxa-characters/isopoda-larva"><div id="isopoda_area" class="scalable isopoda clickable" width="90" height="180" data-default-left="1660" data-default-top="105" data-zoom-about="left,top"></div></a>
+
+    <a href="http://alpha.macroinvertebrates.org/taxa-characters/amphipoda-adult"><div id="amphipoda_area" class="scalable amphipoda clickable"  width="130" height="180" data-default-left="1770" data-default-top="105" data-zoom-about="left,top"></div></a>
+
+    <a href="http://alpha.macroinvertebrates.org/taxa-characters/decapoda-larva"><div  id="decapoda_area" class="scalable decapoda clickable" width="130" height="180" data-default-left="1940" data-default-top="105" data-zoom-about="left,top"></div></a>
+
+    <a href="http://alpha.macroinvertebrates.org/"><div id="site-logo" class="scalable clickable" width="430" height="100" data-default-left="1640" data-default-top="1055" data-zoom-about="left,top"></div></a>
+
+
+</div>
+</div>
+</body>
+
+
+<script>
+    var scalablesMap = {};
+    var WINDOW_PREFERRED_SIZE = { width : 2100, height : 1200 };
+    WINDOW_PREFERRED_SIZE['aspectRatio'] = WINDOW_PREFERRED_SIZE.width / WINDOW_PREFERRED_SIZE.height;
+    WINDOW_PREFERRED_SIZE['aspectRatioInverse'] = 1 / WINDOW_PREFERRED_SIZE.aspectRatio;
+    var computeViewportProperties = function() {
+         var props = {
+            availableWidth : $(window).width(),
+            availableHeight : $(window).height() 
+         };
+
+         props.aspectRatio = props.availableWidth / props.availableHeight;
+         var newWidth = null;
+         var newHeight = null;
+         if (props.aspectRatio < WINDOW_PREFERRED_SIZE.aspectRatio) {
+            newWidth = Math.min(props.availableWidth, WINDOW_PREFERRED_SIZE['width']);
+         }
+         else {
+            newHeight = Math.min(props.availableHeight, WINDOW_PREFERRED_SIZE['height']);
+            newWidth = Math.round(newHeight * WINDOW_PREFERRED_SIZE['aspectRatio']);
+         }
+
+         props.scaleFactor = newWidth / WINDOW_PREFERRED_SIZE['width'];
+
+         return props;
+      };
+
+
+    var setSizeAndPosition = function(element, sizeAndPosition) {
+    element
+    .css('left', Math.round(sizeAndPosition.left * viewportProperties.scaleFactor) + 'px')
+    .css('top', Math.round(sizeAndPosition.top * viewportProperties.scaleFactor) + 'px')
+    .width(Math.round(sizeAndPosition.width * viewportProperties.scaleFactor))
+    .height(Math.round(sizeAndPosition.height * viewportProperties.scaleFactor));
+    };
+
+    var scalables = $('.scalable');
+    console.log(scalables)
+    
+    var scaleImages = function() {
+      viewportProperties = computeViewportProperties();
+      scalables.each(function(index, element) {
+        var jqElement = $('#' + element.id);
+        scalablesMap[element.id] = {
+            before : {
+               left : parseInt(jqElement.attr('data-default-left')),
+               top : parseInt(jqElement.attr('data-default-top')),
+               width : parseInt(jqElement.attr('width')),
+               height : parseInt(jqElement.attr('height'))
+            }
+         };
+        var size = scalablesMap[element.id]['before'];
+        setSizeAndPosition(jqElement, size);
+      });
+
+      var newWidth = WINDOW_PREFERRED_SIZE.width * viewportProperties.scaleFactor;
+      $("#home_page_taxa")
+        .height($(window).height())
+        .width(newWidth)
+        .css('min-width', newWidth + 'px !important')
+        .css('max-width', newWidth + 'px !important');
+    };
+
+    $(window).resize(function() {
+      scaleImages();
+    });
+
+    scaleImages();
+
+</script>
+
+</html>
+
+
+
